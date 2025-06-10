@@ -41,9 +41,10 @@ public class WindowUtils {
 }
 
 # Carregar presets do arquivo JSON
-$presetsPath = ".\windows_presets.json"
+$presetsPath = ".\presets.json"
 if (-not (Test-Path $presetsPath)) {
     Write-Host "Preset file not found: $presetsPath" -ForegroundColor Red
+    Write-Host "Make sure 'presets.json' is in the same folder as this script."
     exit 1
 }
 $presets = Get-Content $presetsPath | ConvertFrom-Json
@@ -115,7 +116,7 @@ while ($true) {
     Clear-Host
     Write-Host "==========================================" -ForegroundColor Cyan
     Write-Host "           Welcome to WRP                " -ForegroundColor Green
-    Write-Host "   === Windows Resizer & Positioner ===    " -ForegroundColor Cyan
+    Write-Host "   === Window Resizer & Positioner ===    " -ForegroundColor Cyan
     Write-Host "==========================================" -ForegroundColor Cyan
     Write-Host ""
     Write-Host "Select a window to modify its size and position" -ForegroundColor Yellow
@@ -177,10 +178,10 @@ while ($true) {
             $presetIndex = [int]$choice - 2
             $presetName = $presetNames[$presetIndex]
             $preset = $presets.$presetName
-            $newX = $preset.X
-            $newY = $preset.Y
-            $newWidth = $preset.Width
-            $newHeight = $preset.Height
+            $newX = $preset.x
+            $newY = $preset.y
+            $newWidth = $preset.width
+            $newHeight = $preset.height
         }
         elseif ($choice -eq "$maxOption") {
             Set-WindowMaximize $selectedWindow

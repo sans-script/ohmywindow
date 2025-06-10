@@ -1,6 +1,10 @@
-# Oh My Windows - Windows Resizer & Positioner
+# Oh My Window - Window Resizer & Positioner
 
-Oh My Windows aka WRP (Windows Resizer & Positioner) is a project that allows you to interactively resize and reposition any open window on Windows 10/11 using PowerShell. It provides an interface to select a window, view its current size and position, and apply custom or preset geometries. Presets are loaded from a JSON file and can be easily extended.
+Oh My Window aka WRP (Window Resizer & Positioner) is a project that allows you to interactively resize and reposition any open window on Windows 10/11 using PowerShell. It provides an interface to select a window, view its current size and position, and apply custom or preset geometries. Presets are loaded from a JSON file and can be easily extended.
+
+## Why this project?
+
+This project was created because sometimes I need to use WSA (Windows Subsystem for Android) and want to set window sizes to very specific dimensions that resemble a smartphone screen. It's ideal when you need an exact width and height, instead of adjusting manually with the mouse, which can be imprecise. With this tool, you can quickly apply precise dimensions and positions to any window, making it especially useful for testing, development, or simply improving your workflow.
 
 ## Features
 
@@ -13,9 +17,13 @@ Oh My Windows aka WRP (Windows Resizer & Positioner) is a project that allows yo
 ## How to use
 
 1. Clone this repository.
-2. Make sure `windows_presets.json` is in the same folder as `windows_manager.ps1`.
-3. Run `windows_manager.ps1` with PowerShell.
+2. Make sure `presets.json` is in the same folder as `window_manager.ps1`.
+3. Run `window_manager.ps1` with PowerShell.
 4. Follow the on-screen instructions to select a window and apply changes.
+5. You can customize all settings by editing the `presets.json` file.
+
+> Note:
+> All presets and configurations were developed on a 1920x1080 screen. For this reason, it is recommended to adjust the presets to match your own screen resolution for best results.
 
 ## Requirements
 
@@ -24,7 +32,7 @@ Oh My Windows aka WRP (Windows Resizer & Positioner) is a project that allows yo
 
 ## Presets
 
-Presets are defined in `windows_presets.json`. Example:
+Presets are defined in `presets.json`. Example:
 
 ```json
 {
