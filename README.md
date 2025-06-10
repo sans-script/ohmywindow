@@ -22,7 +22,7 @@ This project was created because sometimes I need to use WSA (Windows Subsystem 
 4. Follow the on-screen instructions to select a window and apply changes.
 5. You can customize all settings by editing the `presets.json` file.
 
-> Note:
+> [!NOTE]
 > All presets and configurations were developed on a 1920x1080 screen. For this reason, it is recommended to adjust the presets to match your own screen resolution for best results.
 
 ## Requirements
