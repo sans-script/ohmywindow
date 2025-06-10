@@ -37,16 +37,16 @@ Presets are defined in `presets.json`. Example:
 ```json
 {
   "Mobile Portrait Size": {
-    "X": -6,
-    "Y": 0,
-    "Width": 480,
-    "Height": 1080
+    "x": -6,
+    "y": 0,
+    "width": 480,
+    "height": 1080
   },
   "Mobile Landscape Size": {
-    "X": -6,
-    "Y": 0,
-    "Width": 1080,
-    "Height": 480
+    "x": -6,
+    "y": 0,
+    "width": 1080,
+    "height": 480
   }
 }
 ```
